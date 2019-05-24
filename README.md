@@ -1,10 +1,22 @@
-# Enables verbose output during boot #
+# Enables serial console #
 
-Ships a /etc/default/grub.d/30_output_verbose.cfg configuration file, that
-removes "quiet" from the GRUB_CMDLINE_LINUX_DEFAULT variable.
+Ships a /etc/default/grub.d/30_serial_console.cfg configuration file, that
+enables serial console.
 
-For better usability, so it doesn't look like boot hangs on slow systems and
-to ease debugging in case of issues.
+Enables /lib/systemd/system/getty.target.wants/serial-getty@ttyS0.service by
+creating a symlink from:
+/lib/systemd/system/serial-getty@.service
+to:
+/lib/systemd/system/getty.target.wants/serial-getty@ttyS0.service
+
+Useful for serial console login such as into Whonix KVM VMs from the host
+operating system.
+
+Forum discussion:
+https://forums.whonix.org/t/how-do-i-enter-the-whonix-shell-from-cli/7271
+
+Safe to remove if you do not require serial console login such as:
+virsh console vm-name
 ## How to install `serial-console-enable` using apt-get ##
 
 1\. Add [Whonix's Signing Key](https://www.whonix.org/wiki/Whonix_Signing_Key).
@@ -16,7 +28,7 @@ sudo apt-key --keyring /etc/apt/trusted.gpg.d/whonix.gpg adv --keyserver hkp://i
 3\. Add Whonix's APT repository.
 
 ```
-echo "deb http://deb.whonix.org buster main" | sudo tee /etc/apt/sources.list.d/whonix.list
+echo "deb http://deb.whonix.org buster main contrib non-free" | sudo tee /etc/apt/sources.list.d/whonix.list
 ```
 
 4\. Update your package lists.
@@ -40,6 +52,6 @@ Replace `apparmor-profile-torbrowser` with the actual name of this package with 
 * [Free Forum Support](https://forums.whonix.org)
 * [Professional Support](https://www.whonix.org/wiki/Professional_Support)
 
-## Payments ##
+## Donate ##
 
-`serial-console-enable` requires [payments](https://www.whonix.org/wiki/Payments) to stay alive!
+`serial-console-enable` requires [donations](https://www.whonix.org/wiki/Donate) to stay alive!
