@@ -1,3 +1,19 @@
+commit 56f14fe21ab320b09f317deeca2de9523e6fe677
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 13 05:44:16 2019 +0000
+
+    enable grub serial console
+    
+    https://forums.whonix.org/t/grub-serial-menu-in-virsh-console/8097
+    
+    Thanks to @HulaHoopWhonix for providing these settings!
+
+commit 6ddb6a34e1e69600f134e4a91d8b4755b7ff29e1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 6 09:33:42 2019 +0000
+
+    bumped changelog version
+
 commit 4d02957990caf0ca50b63f93e4647380f6af82dc
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 5 01:07:35 2019 -0400
