@@ -1,3 +1,9 @@
+serial-console-enable (3:2.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 02 Apr 2020 11:59:27 +0000
+
 serial-console-enable (3:2.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
