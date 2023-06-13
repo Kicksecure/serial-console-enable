@@ -3,4 +3,4 @@
 
 ## Symlink is better than duplicating that code.
 ## No better method known.
-serial-console-enable: service-file-is-not-a-file lib/systemd/system/getty.target.wants/serial-getty@ttyS0.service
+serial-console-enable: service-file-is-not-a-file [lib/systemd/system/getty.target.wants/serial-getty@ttyS0.service]
