@@ -1,3 +1,15 @@
+commit 82be8cf70096505bb16688dea760b5755001cf09
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Dec 11 06:32:44 2023 -0500
+
+    also keep the default `gfxterm` enabled
+
+commit edbf944c3facded7d9aba73d057c18458388a4c7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Nov 11 20:22:53 2023 +0000
+
+    bumped changelog version
+
 commit 00540d9e300da6973c68b37db41b876b905f8665
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:26 2023 -0500
